@@ -6,37 +6,30 @@
 
     mainModule.controller('questionController', ['$scope', "$location", '$http', '$routeParams', function ($scope, $location, $http, $routeParams) {
 
-
-        $scope.answer="";
+        $scope.answer = "";
         $scope.saveAnswer = function (estado) {
 
             if ($scope.answer != "") {
-                q= new Object();
-                q.id="";
-                q.question=$("#question").text();
-                q.answer=$scope.answer;
+                q = new Object();
+                q.id = "";
+                q.question = $("#question").text();
+                q.answer = $scope.answer;
                 $http({
                     method: "POST",
                     url: "/saveAnswer",
                     data: q,
                     headers: {'Content-Type': 'application/json'}
                 }).success(function () {
-                    //swal("Gracias por tu interés!", "Te mantendremos informado!", "success");
-                    $location.path(estado);
+                    alert("Gracias por su apoyo!");
                 }).error(function () {
-                    alert("Upsss!", "Intentalo de nuevo!", "error");
+                    alert("Intentalo de nuevo!");
                 });
             }
-            else {
-                alert("Gracias por tu interés!", "Ingresa tu correo electrónico para informarte!", "info");
-            }
+
+            $location.path(estado);
+
         };
 
-
-
-
-
-
-
     }]);
+
 })(window.angular);

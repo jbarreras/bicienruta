@@ -17,7 +17,6 @@ public class QuestionController extends Controller {
 
         JsonNode json = request().body().asJson();
         Question res = Json.fromJson(json, Question.class);
-
         res.save();
         return ok(Json.toJson("inserto"));
     }
