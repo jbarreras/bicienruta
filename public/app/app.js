@@ -19,6 +19,22 @@
                 templateUrl: 'views/problem.tpl.html',
                 controller: 'questionController'
             })
+            .when('/video1', {
+                templateUrl: 'views/video1.tpl.html',
+                controller: 'questionController'
+            })
+            .when('/video2', {
+                templateUrl: 'views/video2.tpl.html',
+                controller: 'questionController'
+            })
+            .when('/video3', {
+                templateUrl: 'views/video3.tpl.html',
+                controller: 'questionController'
+            })
+            .when('/video4', {
+                templateUrl: 'views/video4.tpl.html',
+                controller: 'questionController'
+            })
             .when('/safeRoutes', {
                 templateUrl: 'views/safeRoutes.tpl.html',
                 controller: 'questionController'

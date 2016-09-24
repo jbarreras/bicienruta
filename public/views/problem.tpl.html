@@ -2,7 +2,7 @@
     <div class="panel-body">
         <div class="row text-center">
             <div class="col-md-12 text-center">
-                <h2 class="section-heading">¿Este es tu problema?</h2>
+                <h2 class="section-heading">¡Conocenos!</h2>
             </div>
             <div class="col-md-3"></div>
             <div class="col-md-6">
@@ -12,10 +12,20 @@
                 </div>
                 <br>
                 <label for="answer" class="text-muted" id="question">
-                    ¿Utilizas tu bicicleta, que problemas has tenido?, de lo contrario ¿Por qué no utilizas la bicicleta?
+                    <div align="left">
+                        ¿Usted no se desplaza por la ciudad en bicicleta por qué?<br>
+                        <span style="font-size: 3mm">seleccione una o varias.</span><br>
+                        1. Inseguridad<br>
+                        2. Vias no adecuadas<br>
+                        3. Por pereza<br>
+                        4. No le interesa el medio ambiente<br>
+                        5. tengo carro<br>
+                        6. Tiempo
+                    </div>
+
                 </label>
                 <input type="text" class="form-control" placeholder="Ingresa tu respuesta" ng-model="answer" id="answer"><br>
-                <button ng-click="saveAnswer('safeRoutes');" type="button" class="btn btn-success">Siguiente</button>
+                <button ng-click="saveAnswer('video1');" type="button" class="btn btn-success">Siguiente</button>
             </div>
             <div class="col-md-3"></div>
         </div>

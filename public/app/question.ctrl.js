@@ -20,7 +20,7 @@
                     data: q,
                     headers: {'Content-Type': 'application/json'}
                 }).success(function () {
-                    alert("Gracias por su apoyo!");
+                    //alert("Gracias por su apoyo!");
                 }).error(function () {
                     alert("Intentalo de nuevo!");
                 });
